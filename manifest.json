@@ -1,0 +1,44 @@
+{
+  "name": "Plug TV GRATIDÃO",
+  "short_name": "Plug TV",
+  "description": "Plug TV GRATIDÃO - 100 Canais Grátis de Filmes e Séries - Pluto TV oficial",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "./index.html",
+  "scope": "./",
+  "id": "plug-tv-gratidao",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3658/3658946.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3658/3658946.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3658/3658946.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Filmes",
+      "url": "./index.html",
+      "icons": [{ "src": "https://cdn-icons-png.flaticon.com/512/3658/3658946.png", "sizes": "192x192" }]
+    }
+  ]
+}
