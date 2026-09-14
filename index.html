@@ -1,84 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
 <title>Plug TV GRATIDÃO</title>
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="./manifest.json">
 <meta name="theme-color" content="#FFD700">
-<!-- CÓDIGO DO ADSENSE - COLOCA SEU ID AQUI -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-SEU-CODIGO-ADSENSE" crossorigin="anonymous"></script>
+<meta name="description" content="Plug TV GRATIDÃO - 100 Canais Grátis">
 <style>
-body{background:#000;color:#fff;font-family:Arial;margin:0;padding-bottom:20px}
-.header{background:#000;border-bottom:3px solid #FFD700;padding:14px 12px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:99}
-.logo{width:44px;height:44px;background:#FFD700;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;color:#000;font-weight:bold}
-.btn-gold{background:#FFD700;color:#000;border:0;padding:11px 16px;border-radius:12px;font-weight:bold}
-.anuncio{background:#111;border:1px dashed #FFD700;border-radius:12px;margin:10px;padding:8px;text-align:center;min-height:90px;display:flex;align-items:center;justify-content:center;color:#555;font-size:12px}
-.tabs{display:flex;gap:6px;padding:8px;overflow:auto;background:#111;border-bottom:1px solid #222}
-.tab{padding:10px 14px;border-radius:20px;background:#222;border:1px solid #333;color:#fff;white-space:nowrap}
-.tab.active{background:#FFD700;color:#000;font-weight:bold}
-.canal{background:#151515;border:1px solid #2a2a2a;border-radius:16px;margin:8px 10px;padding:12px;display:flex;gap:10px;align-items:center}
-.thumb{width:64px;height:64px;background:#000;border:1px solid #333;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:28px}
-.info{flex:1}
-.play{width:100%;background:#FFD700;color:#000;border:0;padding:10px;border-radius:10px;font-weight:bold;margin-top:6px}
+*{box-sizing:border-box}
+body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif}
+.topo{background:#000;border-bottom:3px solid #FFD700;padding:10px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{display:flex;gap:10px;align-items:center}
+.logo-icon{background:#FFD700;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:28px}
+.titulo{color:#FFD700;font-weight:bold;font-size:18px}
+.sub{color:#aaa;font-size:13px}
+.btn-inst{background:#FFD700;color:#000;border:none;padding:10px 16px;border-radius:24px;font-weight:bold}
+.anuncio{border:1px dashed #FFD700;border-radius:12px;margin:12px;padding:12px;text-align:center;color:#666;min-height:90px;background:#0a0a0a;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.canal{background:#151515;border:1px solid #2a2a2a;border-radius:16px;margin:10px;padding:12px;display:flex;gap:12px;align-items:center}
+.thumb{width:72px;height:72px;background:#000;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:36px;flex-shrink:0}
+.nome{font-weight:bold;font-size:16px}
+.info{color:#aaa;font-size:13px;margin:2px 0 8px}
+.btn-ver{width:100%;background:#FFD700;color:#000;border:none;padding:10px;border-radius:12px;font-weight:bold;font-size:15px}
+.ao-vivo{color:#0f0;font-size:12px;font-weight:bold}
 </style>
+<!-- TROCA AQUI SEU CODIGO ADSENSE QUANDO TIVER -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-SEU-CODIGO" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="header">
-<div class="logo">🔌</div>
-<div style="flex:1"><b style="color:#FFD700">Plug TV GRATIDÃO</b><br><small style="color:#aaa">100 Canais Grátis • Com apoio</small></div>
-<button class="btn-gold" id="instBtn">📲 Instalar</button>
+
+<div class="topo">
+  <div class="logo">
+    <div class="logo-icon">🔌</div>
+    <div>
+      <div class="titulo">Plug TV GRATIDÃO</div>
+      <div class="sub">100 Canais Grátis • Com apoio</div>
+    </div>
+  </div>
+  <button id="instBtn" class="btn-inst">📲 Instalar</button>
 </div>
 
 <!-- ANÚNCIO TOPO - GANHA DINHEIRO AQUI -->
 <div class="anuncio">
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-SEU-CODIGO-ADSENSE"
-     data-ad-slot="TOPO-123"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-<span>Espaço do seu anúncio - Topo</span>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-SEU-CODIGO-ADSENSE"
+       data-ad-slot="TOPO-123"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <span>Espaço do seu anúncio - Topo</span>
 </div>
 
-<div style="background:linear-gradient(180deg,#1a1a00,#000);border:1px solid #FFD700;border-radius:16px;margin:10px;padding:12px;text-align:center">
-<h2 style="color:#FFD700;margin:6px 0">🔌 Plug TV GRATIDÃO</h2>
-<p style="color:#0f0;margin:4px 0;font-size:13px">✅ V20 - Agora com apoio pra manter grátis</p>
+<div style="border:1px solid #FFD700;border-radius:16px;margin:12px;padding:12px;text-align:center;background:linear-gradient(180deg,#1a1a00,#000)">
+  <div style="font-size:24px">🔌 <b style="color:#FFD700">Plug TV GRATIDÃO</b></div>
+  <div style="color:#0f0;font-size:13px;margin-top:4px">✅ V20 - Agora com apoio pra manter grátis</div>
 </div>
 
 <div id="lista"></div>
 
 <!-- ANÚNCIO RODAPÉ - GANHA DINHEIRO AQUI TAMBÉM -->
 <div class="anuncio">
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-SEU-CODIGO-ADSENSE"
-     data-ad-slot="RODAPE-456"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-<span>Espaço do seu anúncio - Rodapé</span>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-SEU-CODIGO-ADSENSE"
+       data-ad-slot="RODAPE-456"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  <span>Espaço do seu anúncio - Rodapé</span>
 </div>
 
 <div style="text-align:center;padding:10px">
-<small style="color:#666">💰 Quer tirar anúncios? PIX R$ 2,99 - Chave: seu-pix@email.com<br>Quer internet rápida? <a href="#" style="color:#FFD700">Clique aqui - Ganhe desconto</a></small>
+  <small style="color:#666">💰 Quer tirar anúncios? PIX R$ 2,99 - Chave: seu-pix@email.com</small>
 </div>
 
 <script>
-let deferred=null;addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferred=e;});
-document.getElementById('instBtn').onclick=()=>{if(deferred)deferred.prompt();else alert('⋮ > Adicionar à tela inicial');}
+let deferred=null;
+window.addEventListener('beforeinstallprompt',e=>{
+  e.preventDefault();
+  deferred=e;
+});
+document.getElementById('instBtn').onclick=()=>{
+  if(deferred){
+    deferred.prompt();
+    deferred.userChoice.then(()=>{deferred=null});
+  } else {
+    alert('No seu celular clique nos 3 pontinhos > Adicionar à tela inicial');
+  }
+};
+
 let canais=[
-{nome:'Cine Ação - SEU PRINT',cat:'filmes',icon:'💥',info:'Elektra - ao vivo',url:'https://pluto.tv/br/live-tv/5e0b9bd8d2f6f30009a6f6c0'},
-{nome:'Cine Sucessos',cat:'filmes',icon:'🎬',info:'Blockbusters',url:'https://pluto.tv/br/live-tv/5e0b9bdb0b2b9c00093e56c9'},
-{nome:'Chaves 24h',cat:'series',icon:'🤣',info:'Chaves',url:'https://pluto.tv/br/live-tv/5e0b9bb90b2b9c00093e56a0'},
+{nome:'Cine Ação - SEU PRINT',cat:'filmes',icon:'💥',info:'Elektra - ao vivo',url:'https://www.pluto.tv/br/live-tv/5e0b9bd8d2f6f30009a6f6c0'},
+{nome:'Cine Sucessos',cat:'filmes',icon:'🎬',info:'Blockbusters',url:'https://www.pluto.tv/br/live-tv/5e0b9bb90b2b9c00093e56a0'},
+{nome:'Chaves 24h',cat:'series',icon:'🤣',info:'Chaves',url:'https://www.pluto.tv/br/live-tv/5e0b9bb90b2b9c00093e56a0'}
 ];
+
 function abrir(u){window.open(u,'_blank');}
+
 function render(){
- let l=document.getElementById('lista');
- l.innerHTML=canais.map(c=>`<div class="canal"><div class="thumb">${c.icon}</div><div class="info"><b>${c.nome} <span style="color:#0f0;font-size:10px">● AO VIVO</span></b><br><small style="color:#aaa">${c.info}</small><br><button class="play" onclick="abrir('${c.url}')">▶️ VER GRÁTIS</button></div></div>`).join('');
+  let l=document.getElementById('lista');
+  l.innerHTML=canais.map(c=>`
+  <div class="canal">
+    <div class="thumb">${c.icon}</div>
+    <div style="flex:1">
+      <div class="nome">${c.nome} <span class="ao-vivo">• AO VIVO</span></div>
+      <div class="info">${c.info}</div>
+      <button class="btn-ver" onclick="abrir('${c.url}')">▶ VER GRÁTIS</button>
+    </div>
+  </div>`).join('');
 }
 render();
 </script>
+
 <script>
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('./sw.js');
