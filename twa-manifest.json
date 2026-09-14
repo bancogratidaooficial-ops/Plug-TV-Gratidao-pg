@@ -1,0 +1,23 @@
+{
+  "packageId": "com.plugtv.gratidao",
+  "host": "SEU-USUARIO.github.io",
+  "name": "Plug TV GRATIDÃO",
+  "launcherName": "Plug TV",
+  "display": "standalone",
+  "themeColor": "#FFD700",
+  "navigationColor": "#000000",
+  "backgroundColor": "#000000",
+  "enableNotifications": true,
+  "startUrl": "/plug-tv-gratidao/",
+  "iconUrl": "https://cdn-icons-png.flaticon.com/512/3658/3658946.png",
+  "maskableIconUrl": "https://cdn-icons-png.flaticon.com/512/3658/3658946.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersion": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "pwaBuilder"
+}
