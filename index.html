@@ -3,56 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plug TV Gratidão - TV Online Grátis</title>
-
-<!-- ADSENSE -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2504730768556065" crossorigin="anonymous"></script>
-
-<meta name="theme-color" content="#0f0f0f">
+<title>Plug TV GRATIDÃO</title>
 <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2263470788888608" crossorigin="anonymous"></script>
 <style>
-body{margin:0;background:#0f0f0f;color:#fff;font-family:Arial,sans-serif;text-align:center}
-header{padding:20px;background:#1a1a1a}
-h1{color:#ff7700;margin:0}
-.player{width:100%;max-width:900px;margin:20px auto;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
-iframe{width:100%;height:100%;border:0}
-.lista{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:20px}
-.canal{padding:10px 18px;background:#222;border-radius:20px;cursor:pointer;border:1px solid #333}
-.canal:hover{background:#ff7700;color:#000}
-.anuncio{margin:20px auto;min-height:90px;background:#1a1a1a;border-radius:8px;display:flex;align-items:center;justify-content:center}
-footer{padding:20px;background:#1a1a1a;margin-top:30px}
+body{background:#000;color:#fff;font-family:Arial;margin:0}
+.topo{background:#000;border-bottom:3px solid #ffcc00;padding:10px;display:flex;justify-content:space-between;align-items:center}
+.btn-instalar{background:#ffcc00;color:#000;border:none;padding:10px 16px;border-radius:20px;font-weight:bold}
+.card{background:#1a1a1a;border-radius:15px;margin:12px;padding:12px;display:flex;gap:10px}
+.btn-ver{background:#ffcc00;color:#000;width:100%;padding:12px;border:none;border-radius:12px;font-weight:bold}
+.rodape{border:1px dashed #ffcc00;margin:15px;padding:30px;text-align:center;border-radius:12px;color:#555}
+.pix{padding:20px;text-align:center;color:#aaa}
+.pix b{color:#ffcc00}
 </style>
 </head>
 <body>
-<header>
-<h1>Plug TV Gratidão 🙏</h1>
-<p>Canais ao vivo grátis</p>
-</header>
-
-<div class="anuncio">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2504730768556065" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<div class="topo">
+<div>🔌 <b>Plug TV GRATIDÃO</b><br><small>100 Canais Grátis • Com apoio</small></div>
+<button class="btn-instalar" id="instalar">📲 Instalar</button>
 </div>
 
-<div class="player">
-<iframe id="tv" src="https://pluto.tv/br/live-tv/pluto-tv-filmes-acao" allowfullscreen allow="autoplay"></iframe>
+<div style="border:2px solid #ffcc00;margin:10px;padding:15px;border-radius:15px;text-align:center">
+🔌 <b style="color:#ffcc00;font-size:22px">Plug TV GRATIDÃO</b><br>
+✅ V20 - Agora com apoio pra manter grátis
 </div>
 
-<div class="lista">
-<div class="canal" onclick="document.getElementById('tv').src='https://pluto.tv/br/live-tv/pluto-tv-filmes-acao'">Globo - Filmes Ação</div>
-<div class="canal" onclick="document.getElementById('tv').src='https://pluto.tv/br/live-tv/pluto-tv-novelas'">SBT - Novelas</div>
-<div class="canal" onclick="document.getElementById('tv').src='https://pluto.tv/br/live-tv/pluto-tv-comedia'">Record - Comédia</div>
-<div class="canal" onclick="document.getElementById('tv').src='https://pluto.tv/br/live-tv/pluto-tv-cine-suspense'">Cine Suspense</div>
+<div class="card"><div style="flex:1"><b>Cine Ação - SEU PRINT <span style="color:#0f0">● AO VIVO</span></b><br><small>Elektra - ao vivo</small><br><button class="btn-ver">▶️ VER GRÁTIS</button></div></div>
+<div class="card"><div style="flex:1"><b>Cine Sucessos <span style="color:#0f0">● AO VIVO</span></b><br><small>Blockbusters</small><br><button class="btn-ver">▶️ VER GRÁTIS</button></div></div>
+<div class="card"><div style="flex:1"><b>Chaves 24h <span style="color:#0f0">● AO VIVO</span></b><br><small>Chaves</small><br><button class="btn-ver">▶️ VER GRÁTIS</button></div></div>
+
+<div class="rodape">Espaço do seu anúncio - Rodapé</div>
+
+<div class="pix">
+💰 Quer tirar anúncios? PIX R$ 2,99 - Chave: <b>025.446.319-37</b><br><br>
+Quer internet rápida? <a style="color:#ffcc00" href="#">Clique aqui - Ganhe desconto</a>
 </div>
 
 <script>
+let promptEvent;
+window.addEventListener('beforeinstallprompt', e=>{e.preventDefault();promptEvent=e;});
+document.getElementById('instalar').onclick=()=>{if(promptEvent){promptEvent.prompt();}};
 if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js')}
 </script>
-
-<footer>
-<p>Quer tirar anúncios? PIX R$2,99 - Chave: 025.446.319-37</p>
-<p style="font-size:12px;color:#888;">Quer internet rápida? Clique aqui</p>
-</footer>
-
 </body>
 </html>
